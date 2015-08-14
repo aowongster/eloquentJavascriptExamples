@@ -42,13 +42,22 @@ function listToArray ( list ) {
 
   return arr;
 }
-// try recursive function
+
 
 
 function prepend (ele, list) {
-
+  return {value: ele, rest: list};
 }
 
-function nth (list, num ) {
+// cheating
+function nth2 (list, num ) {
+  return listToArray( list )[num];
+}
 
+// try recursive function
+function nth (list, num) {
+  if (num === 0) {
+    return list.value;
+  }
+  return nth( list.rest, num -1)
 }
