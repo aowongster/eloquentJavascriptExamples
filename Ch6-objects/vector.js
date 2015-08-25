@@ -14,6 +14,7 @@ Vector.prototype.minus = function(sub) {
   return new Vector(this.x - sub.x, this.y -sub.y);
 };
 
+// getter method, setter is ignored if not defined
 Object.defineProperty(Vector.prototype, "length", {
   get: function() { return Math.sqrt(this.x*this.x + this.y*this.y); }
 });
