@@ -10,6 +10,7 @@ Get it here: [Eloquent Javascript](http://eloquentjavascript.net/)
 
 ## Update Log
 
+* [Ch 6 complete!](http://eloquentjavascript.net/06_object.html) 8/25/
 * [Ch 5 complete!](http://eloquentjavascript.net/05_higher_order.html) 8/17/15
 * [Ch 4 complete!](http://eloquentjavascript.net/04_data.html) 8/14/15
 * [Ch 3 complete!](http://eloquentjavascript.net/03_functions.html) 7/29/15
