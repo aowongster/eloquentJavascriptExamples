@@ -9,7 +9,7 @@ The examples are tested as I work through the website. I suppose some testing an
 Get it here: [Eloquent Javascript](http://eloquentjavascript.net/)
 
 ## Update Log
-
+* [Ch 7 complete!](http://eloquentjavascript.net/07_elife.html) 8/28/15
 * [Ch 6 complete!](http://eloquentjavascript.net/06_object.html) 8/25/
 * [Ch 5 complete!](http://eloquentjavascript.net/05_higher_order.html) 8/17/15
 * [Ch 4 complete!](http://eloquentjavascript.net/04_data.html) 8/14/15
