@@ -9,6 +9,7 @@ The examples are tested as I work through the website. I suppose some testing an
 Get it here: [Eloquent Javascript](http://eloquentjavascript.net/)
 
 ## Update Log
+* [Ch 9 complete!](http://eloquentjavascript.net/09_regexp.html) 9/17/15
 * [Ch 8 complete!](http://eloquentjavascript.net/08_error.html) 9/1/15
 * [Ch 7 complete!](http://eloquentjavascript.net/07_elife.html) 8/28/15
 * [Ch 6 complete!](http://eloquentjavascript.net/06_object.html) 8/25/
