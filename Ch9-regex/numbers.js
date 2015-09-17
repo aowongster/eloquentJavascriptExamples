@@ -1,5 +1,5 @@
 // Fill in this regular expression.
-var number = /^-?\+?[\deE]?\.?[\deE]*?$/;
+var number = /^[-\+]?(\.?[\d]+(e[-\+])?[\de]*|[\d]+\.?[\d]*(e[\d])*)$/i;
 
 // Tests:
 ["1", "-1", "+15", "1.55", ".5", "5.", "1.3e2", "1E-4",
