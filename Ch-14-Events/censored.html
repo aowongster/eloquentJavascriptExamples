@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<input type="text">
+<script>
+  var field = document.querySelector("input");
+  // Your code here.
+  addEventListener('keypress', function(e) {
+    if(/[qwx]/i.test(String.fromCharCode(e.charCode))) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>

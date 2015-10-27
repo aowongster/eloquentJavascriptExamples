@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+  .ball { /* className for the trail elements */
+    position: absolute;
+    height: 20px; width: 20px;
+    border-radius: 3px;
+    background: teal;
+  }
+  </style>
+</head>
+<body>
+
+  <script>
+
+    var ball = document.createElement('div');
+    ball.className = 'ball';
+    document.body.appendChild(ball);
+
+    var mx, my;
+    addEventListener('mousemove', function(e) {
+      mx = e.pageX;
+      my = e.pageY;
+    });
+
+    var lastTime = null;
+    function animate(time) {
+      if (lastTime !== null) {
+
+      }
+      lastTime = time;
+      ball.style.top = 
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate); // let's get it started
+  </script>
+
+</body>
+</html>
