@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<div id="wrapper" style="display: none;">
+  <div data-tabname="one">Tab one</div>
+  <div data-tabname="two">Tab two</div>
+  <div data-tabname="three">Tab three</div>
+</div>
+
+<div id="content">
+hi
+</div>
+
+<script>
+  function asTabs(node) {
+  // insert buttons
+    var tabChildren = [];
+    for (var i = 0; i < node.childNodes.length; i++) {
+      if (node.childNodes[i].nodeType === 1) {
+        var button = document.createElement('button');
+        button.setAttribute('value', node.childNodes[i].innerHTML);
+        button.innerHTML = node.childNodes[i].innerHTML;
+        document.body.appendChild(button);
+
+        // closure to execute right away preserving local state of loop iteration
+        (function(childNode) { button.addEventListener('click', function() {
+          var content = document.querySelector('#content');
+          var contentVal = childNode.getAttribute('data-tabname');
+          console.log(contentVal);
+          content.innerHTML = contentVal;
+        })}(node.childNodes[i]));
+
+        tabChildren.push(button);
+      }
+    }
+  }
+  asTabs(document.querySelector("#wrapper"));
+</script>
+
+</body>
+</html>

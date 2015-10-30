@@ -20,7 +20,10 @@
     ball.className = 'ball';
     document.body.appendChild(ball);
 
+    var speed = 10;
     var mx, my;
+    var ballTop = 0;
+    var ballLeft = 0;
     addEventListener('mousemove', function(e) {
       mx = e.pageX;
       my = e.pageY;
@@ -29,10 +32,26 @@
     var lastTime = null;
     function animate(time) {
       if (lastTime !== null) {
-
+        speed = (time - lastTime) * 0.1;
+//        console.log(speed);
       }
       lastTime = time;
-      ball.style.top = 
+
+      // update
+      if (my > ballTop) {
+        ballTop += speed;
+      } else if (my < ballTop) {
+        ballTop -= speed;
+      }
+
+      if (mx > ballLeft) {
+        ballLeft += speed;
+      } else if (mx < ballLeft) {
+        ballLeft -= speed;
+      }
+      ball.style.top = ballTop + 'px';
+      ball.style.left = ballLeft + 'px';
+
       requestAnimationFrame(animate);
     }
     requestAnimationFrame(animate); // let's get it started
